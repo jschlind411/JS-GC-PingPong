@@ -66,7 +66,7 @@ namespace Tests
         {
             string result = game.GetResult(numbeNotDivisibleByThreeOrFive);
 
-            Assert.Equal("1", result);
+            Assert.Equal(numbeNotDivisibleByThreeOrFive.ToString(), result);
         }
     }
 }
