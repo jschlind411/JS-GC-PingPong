@@ -25,10 +25,13 @@ namespace Tests
             Assert.IsType<string>(result);
         }
 
-        [Fact]
-        public void GetResult_GivenANumberDivisibleByThree_WillReturnFizz()
+        [Theory]
+        [InlineData(3)]
+        [InlineData(6)]
+        [InlineData(9)]
+        public void GetResult_GivenANumberDivisibleByThree_WillReturnFizz(int numberDivisibleByThree)
         {
-            string result = game.GetResult(3);
+            string result = game.GetResult(numberDivisibleByThree);
 
             Assert.Equal("Fizz", result);
         }
