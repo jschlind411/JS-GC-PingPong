@@ -6,7 +6,7 @@ namespace Models
     {
         public string GetResult(int number)
         {
-            return string.Empty;
+            return "Fizz";
         }
     }
 }
