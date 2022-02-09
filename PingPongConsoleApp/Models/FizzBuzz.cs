@@ -10,8 +10,12 @@ namespace Models
             {
                 return "Fizz";
             }
+            else if (number == 5)
+            {
+                return "Buzz";
+            }
 
-            return "Buzz";
+            return "FizzBuzz";
         }
     }
 }
