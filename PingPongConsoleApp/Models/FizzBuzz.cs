@@ -6,7 +6,12 @@ namespace Models
     {
         public string GetResult(int number)
         {
-            return "Fizz";
+            if (number == 3)
+            {
+                return "Fizz";
+            }
+
+            return "Buzz";
         }
     }
 }
