@@ -19,10 +19,18 @@ namespace Tests
         [Fact]
         public void GetResult_GivenANumber_WillReturnAStringValue()
         {
-            string result = game.GetResult();
+            string result = game.GetResult(1);
 
             Assert.NotNull(result);
             Assert.IsType<string>(result);
+        }
+
+        [Fact]
+        public void GetResult_GivenANumberDivisibleByThree_WillReturnFizz()
+        {
+            string result = game.GetResult(3);
+
+            Assert.Equal("Fizz", result);
         }
     }
 }

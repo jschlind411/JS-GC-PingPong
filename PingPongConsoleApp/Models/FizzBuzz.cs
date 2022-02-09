@@ -4,7 +4,7 @@ namespace Models
 {
     public class FizzBuzz
     {
-        public string GetResult()
+        public string GetResult(int number)
         {
             return string.Empty;
         }
