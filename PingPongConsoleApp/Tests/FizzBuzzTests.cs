@@ -48,5 +48,13 @@ namespace Tests
 
             Assert.Equal("FizzBuzz", result);
         }
+
+        [Fact]
+        public void GetResult_GivenANumberNotDivisibleByThreeOrFive_WillReturnTheNumber()
+        {
+            string result = game.GetResult(1);
+
+            Assert.Equal("1", result);
+        }
     }
 }
