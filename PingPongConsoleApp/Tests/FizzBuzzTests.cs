@@ -40,5 +40,13 @@ namespace Tests
 
             Assert.Equal("Buzz", result);
         }
+
+        [Fact]
+        public void GetResult_GivenANumberDivisibleByThreeAndFive_WillReturnFizzBuzz()
+        {
+            string result = game.GetResult(15);
+
+            Assert.Equal("FizzBuzz", result);
+        }
     }
 }
