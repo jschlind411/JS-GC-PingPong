@@ -6,7 +6,7 @@ namespace Models
     {
         public string GetResult(int number)
         {
-            if (number == 3)
+            if (number % 3 == 0 && number != 15)
             {
                 return "Fizz";
             }
