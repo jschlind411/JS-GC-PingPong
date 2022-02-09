@@ -36,10 +36,13 @@ namespace Tests
             Assert.Equal("Fizz", result);
         }
 
-        [Fact]
-        public void GetResult_GivenANumberDivisibleByFive_WillReturnBuzz()
+        [Theory]
+        [InlineData(5)]
+        [InlineData(45)]
+        [InlineData(505)]
+        public void GetResult_GivenANumberDivisibleByFive_WillReturnBuzz(int numberDivisibleByFive)
         {
-            string result = game.GetResult(5);
+            string result = game.GetResult(numberDivisibleByFive);
 
             Assert.Equal("Buzz", result);
         }
