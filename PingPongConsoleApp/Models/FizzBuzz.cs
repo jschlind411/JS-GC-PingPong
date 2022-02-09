@@ -6,18 +6,19 @@ namespace Models
     {
         public string GetResult(int number)
         {
-            if (number % 3 == 0 && number != 15)
-            {
-                return "Fizz";
-            }
-            else if (number == 5)
-            {
-                return "Buzz";
-            }
-            else if(number == 15)
+            if (number == 15)
             {
                 return "FizzBuzz";
             }
+            else if (number % 3 == 0)
+            {
+                return "Fizz";
+            }
+            else if (number % 5 == 0)
+            {
+                return "Buzz";
+            }
+
 
             return number.ToString();
         }

@@ -38,7 +38,7 @@ namespace Tests
 
         [Theory]
         [InlineData(5)]
-        [InlineData(45)]
+        [InlineData(40)]
         [InlineData(505)]
         public void GetResult_GivenANumberDivisibleByFive_WillReturnBuzz(int numberDivisibleByFive)
         {
