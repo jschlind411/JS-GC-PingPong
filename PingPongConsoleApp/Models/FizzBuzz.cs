@@ -14,8 +14,12 @@ namespace Models
             {
                 return "Buzz";
             }
+            else if(number == 15)
+            {
+                return "FizzBuzz";
+            }
 
-            return "FizzBuzz";
+            return number.ToString();
         }
     }
 }
